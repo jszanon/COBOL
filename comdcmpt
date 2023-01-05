@@ -1,0 +1,41 @@
+**** Purpose: Mostrar comandos COBOL (COMPUTE) - O comando COMPUTE faz cálculo matemáticos, podemos criar qualquer equação ou expressões aritméticas.
+Neste programa não estou utilizando o tratamento de erro (ON SIZE ERROR) mas é importanto utilizá-lo sempre que for trabalhar com números.
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. COMDCMPT.
+DATA DIVISION.
+FILE SECTION.
+WORKING-STORAGE SECTION.
+77 WS-RESULT                    PIC 9(05)  VALUE ZEROS.
+77 WS-NUM-1                     PIC 99     VALUE ZEROS.    
+77 WS-NUM-2			            PIC 99     VALUE ZEROS.           
+PROCEDURE DIVISION.
+
+    COMPUTE WS-RESULT = 5 + 5
+    COMPUTE WS-RESULT = WS-RESULT * 3
+    COMPUTE WS-RESULT = WS-RESULT – 15
+    COMPUTE WS-RESULT = WS-RESULT / 3
+    COMPUTE WS-RESULT = WS RESULT ** 3
+
+    DISPLAY 'RESULTADO: ' WS-RESULT
+
+    DISPLAY 'INFORME O PRIMEIRO NUMERO: '
+    ACCEPT WS-NUM-1
+    DISPLAY 'INFORME O SEGUNDO NUMERO: '
+    ACCEPT WS-NUM-2
+
+    COMPUTE WS-RESULT = WS-NUM-1 * WS-NUM-2
+
+    DISPLAY 'RESULTADO: ' WS-RESULT
+
+STOP RUN.
+
+CONSOLE:
+
+RESULTADO: 00125
+INFORME O PRIMEIRO NUMERO:
+5
+INFORME O SEGUNDO NUMERO:
+2
+RESULTADO: 0010
+
