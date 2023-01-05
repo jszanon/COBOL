@@ -1,0 +1,39 @@
+**** Purpose: Mostrar comandos COBOL (PERFORM) - O comando PERFORM é utilizado quando trabalhamos com parágrafos, por exemplo, dentro de um programa nós
+podemos trabalhar com agrupamento, podemos trabalhar com as seções e os parágrafos e vamos movimentá-los utilizando o comando PERFORM, que é como se eu 
+estivesse pedindo para que ele faça uma exibição.
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. CPERFORM.
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+PROCEDURE DIVISION.
+    
+    PERFORM S2-SECTION.
+    PERFORM S1-SECTION.
+    PERFORM S3-SECTION.
+    
+    S1-SECTION.
+    P1-INICIO.
+        DISPLAY 'PARAGRAFO 1'.
+    P1-FIM.
+    
+    P2-INICIO.
+        DISPLAY 'PARAGRAFO 2'.
+    P2-FIM.
+    
+    S2-SECTION.
+    P3-INICIO.
+        DISPLAY 'PARAGRAFO 3'.
+    P3-FIM.
+
+    S3-SECTION.
+    P4-INICIO.
+         STOP RUN.
+    P4-FIM.
+    
+
+CONSOLE:
+PARAGRAFO 1
+PARAGRAFO 2
+PARAGRAFO 3
+
