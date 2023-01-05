@@ -1,3 +1,5 @@
+**** Purpose: Cadastrar contatos
+
 IDENTIFICATION DIVISION.
 PROGRAM-ID. CADCONTT.
 
