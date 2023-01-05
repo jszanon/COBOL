@@ -1,0 +1,36 @@
+**** Purpose: Mostrar comandos COBOL (ACCEPT)
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. DATAHORA.
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+77 WS-MOSTRA            PIC X(20) VALUE SPACES.
+PROCEDURE DIVISION.
+
+     ACCEPT WS-MOSTRA FROM DATE           * Data formato americano
+     DISPLAY WS-MOSTRA
+    
+     ACCEPT WS-MOSTRA FROM DATE YYYYMMDD * Data mostrando ano com 4 dígitos
+     DISPLAY WS-MOSTRA
+     
+     ACCEPT WS-MOSTRA FROM DAY           * Ano e numero do dia do ano 
+     DISPLAY WS-MOSTRA
+     
+     ACCEPT WS-MOSTRA FROM DAY YYYYDDD   * Ano com 4 digitos e dia do ano
+     DISPLAY WS-MOSTRA
+     
+     ACCEPT WS-MOSTRA FROM DAY-OF-WEEK   * Dia da semana, neste caso Thursday
+     DISPLAY WS-MOSTRA
+     
+     ACCEPT WS-MOSTRA FROM TIME          * Hora, minuto, segundo, milésimo de segundo
+     DISPLAY WS-MOSTRA
+STOP RUN.
+
+
+CONSOLE:
+230105              
+20230105            
+23005               
+2023005             
+4                   
+18050533  
