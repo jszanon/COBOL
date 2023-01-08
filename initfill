@@ -1,0 +1,44 @@
+**** Purpose: Mostar comandos COBOL (INITIALISE - essa instrução faz uma inicialização das variáveis, e quando ele faz o reset ele volta a variável para
+o seu estado original, exceto que esta seja declarada como FILLER.
+FILLER: Aloca espaço na área de memória. Não é possível resetar o FILLER, caso você precise resetar você deve transformar ele em uma variável).
+
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. INITFILL.
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 WS-NOME.
+    03 WS-PRIMEIRO-NOME         PIC X(10) VALUE 'JESSICA'.
+    03 FILLER                   PIC X(10) VALUE 'ZANON'.
+    03 FILLER                  PIC 9(03) VALUE 1.
+PROCEDURE DIVISION.
+    DISPLAY 'SAIDA 1: '
+    DISPLAY WS-NOME
+    
+    DISPLAY 'SAIDA 2: '
+    INITIALISE WS-NOME REPLACING ALPHANUMERIC BY 'SPACES' 
+                                 NUMERIC      BY 3.
+    DISPLAY WS-NOME
+    
+    DISPLAY 'SAIDA 3: '
+    INITIALISE WS-NOME 
+    DISPLAY WS-NOME
+    
+    DISPLAY 'SAIDA 4: '
+    INITIALISE WS-NOME REPLACING ALPHANUMERIC BY SPACES 
+                                 NUMERIC      BY ZEROS.
+    DISPLAY WS-NOME
+    .
+STOP RUN.
+
+
+CONSOLE:
+
+SAIDA 1: 
+JESSICA   ZANON     001
+SAIDA 2: 
+SPACES    ZANON     001
+SAIDA 3: 
+          ZANON     001
+SAIDA 4: 
+          ZANON     001
