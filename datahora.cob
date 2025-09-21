@@ -25,12 +25,3 @@ PROCEDURE DIVISION.
      ACCEPT WS-MOSTRA FROM TIME          * Hora, minuto, segundo, milésimo de segundo
      DISPLAY WS-MOSTRA
 STOP RUN.
-
-
-CONSOLE:
-230105              
-20230105            
-23005               
-2023005             
-4                   
-18050533  
