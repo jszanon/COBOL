@@ -72,8 +72,3 @@ P300-CONSULTA.
 P300-FIM.
 P900-FIM.
 STOP RUN.
-Informe o numero de identificacao do contato:
-7
-CONTATO NAO EXISTE!
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-F
