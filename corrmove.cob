@@ -37,12 +37,3 @@ PROCEDURE DIVISION.
 	DISPLAY 'WS-LAYOUT-2: ' LENGTH OF WS-LAYOUT-2
 
 STOP RUN.
-
-
-CONSOLE:
-WS-LAYOUT-1: JESSICA ZANON                 RUA 10              333-2221            TESTE@TESTE         SAO JOSE                      SAO PAULO                     
-WS-LAYOUT-1: JESSICA ZANON                 RUA 10              TESTE@TESTE         SAO PAULO                     SAO JOSE                      333-2221            
-WS-LAYOUT-1: 150
-WS-LAYOUT-2: 150
-
-
