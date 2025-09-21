@@ -80,13 +80,7 @@ P300-CADASTRA.
      .
 P300-FIM.
 P900-FIM.
-STOP RUN.
-
-
-CONSOLE:
-*** CADASTRO DE CONTATOS ***
-PARA REGISTRAR UM CONTATO, INFORME:
-Um numero para identificação e tecle <ENTER>: 
+STOP-RUN.
 1
 Um nome para contato e tecle <ENTER>:
 ANA LUIZA
