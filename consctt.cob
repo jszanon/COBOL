@@ -72,40 +72,6 @@ P300-CONSULTA.
 P300-FIM.
 P900-FIM.
 STOP RUN.
-
-
-CONSOLE:
-*** CONSULTA DE CONTATOS ***
-Informe o numero de identificacao do contato:
-1
-01 – ANA LUIZA
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
-Informe o numero de identificacao do contato:
-2
-CONTATO NAO EXISTE!
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
-Informe o numero de identificacao do contato:
-3
-03 – ANA LUCIA
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
-Informe o numero de identificacao do contato:
-4
-04 – HUMBERTO SANTOS
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
-Informe o numero de identificacao do contato:
-5
-03 – FULANO DE TAL
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
-Informe o numero de identificacao do contato:
-6
-CONTATO NAO EXISTE!
-TECLE: <QUALQUER TECLA> para continuar, ou <F> para finalizar.
-
 Informe o numero de identificacao do contato:
 7
 CONTATO NAO EXISTE!
