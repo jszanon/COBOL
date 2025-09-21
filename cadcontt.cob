@@ -76,15 +76,3 @@ P300-CADASTRA.
 P300-FIM.
 P900-FIM.
 STOP RUN.
-
-
-
-CONSOLE:
-*** CADASTRO DE CONTATOS ***
-PARA REGISTRAR UM CONTATO, INFORME:
-Um numero para Identificacao e tecle <ENTER>:
-1
-Um nome para Contato e tecle <ENTER>:
-JESSICA ZANON
-Contato gravado com sucesso!
-TECLE: '<QUALQUER TECLA> para continuar, ou <F> para finalizar.'
